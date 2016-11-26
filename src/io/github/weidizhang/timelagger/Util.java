@@ -25,17 +25,16 @@ public class Util {
 			
 			try {
 				prefs.put("foo", "bar");
-	            prefs.remove("foo");
-	            prefs.flush();
-	            return true;
+				prefs.remove("foo");
+				prefs.flush();
+				return true;
 			}
 			catch (Exception e){
-	            return false;
-	        }
+				return false;
+			}
 			finally {
-	            System.setErr(systemErr);
-	        }
+				System.setErr(systemErr);
+			}
 		}
-		
 	}
 }
